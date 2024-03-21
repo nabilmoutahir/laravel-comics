@@ -42,3 +42,12 @@ Route::get('/action-comics', function () {
   return view('action-comics', compact('action'));
 })->name('action-comics');
 
+// AMERICAN VAMPIRE
+Route::get('/american-vampire', function () {
+
+  $comics = config('comics');
+
+  $american = $comics[1];
+
+  return view('american-vampire', compact('american'));
+})->name('american-vampire');
