@@ -28,7 +28,9 @@
 
             <div class="px-3">CHARACTERS</div>
 
-            <div class="px-3">COMICS</div>
+            <div class="px-3">
+              <a href="{{ route('comics') }}">COMICS</a>
+            </div>
 
             <div class="px-3">TV</div>
 
