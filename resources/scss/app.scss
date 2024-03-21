@@ -7,21 +7,42 @@
 
     main {
         flex-grow: 1;
+
+        .jumbotron {
+                height: 50vh;
+                background-image: url(images/jumbotron.jpg);
+                background-size: cover;
+            }
+        
+        .comic-thumb {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+    
+        .home-logo {
+            height: 70px;
+        }
     }
 }
 
-.jumbotron {
+.contacts{
+    background-image: url(/public/images/footer-bg.jpg);
+    color:white;
+    font-size: small;
     height: 50vh;
-    background-image: url(images/jumbotron.jpg);
-    background-size: cover;
+
+    .contacts-container, .contacts-logo{
+        height: 100%;
+    }
+
+    .contacts-container-links{
+    height: 100%;
+        gap: 20px;
+    }
+
 }
 
-.comic-thumb{
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: contain;
-}
-
-.home-logo{
-    height: 70px;
+.footer-right{
+    padding: 0 10px;
 }
